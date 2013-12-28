@@ -37,7 +37,7 @@
             ((NSTextFieldCell *)textField.cell).placeholderString = @"(null)";
     }
     
-    for (NSPopUpButton *popUpButton in @[_controlSizePopUpButton, _backgroundStylePopUpButton, _buttonTypePopUpButton, _bezelStylePopUpButton, _statePopUpButton])
+    for (NSPopUpButton *popUpButton in @[_controlSizePopUpButton, _backgroundStylePopUpButton, _bezelStylePopUpButton, _statePopUpButton])
         [popUpButton selectItemWithTag:[[self.button.cell valueForKey:popUpButton.identifier] integerValue]];
     
     [_borderedCheckbox setState:[[self.button.cell valueForKey:_borderedCheckbox.identifier] boolValue] ? NSOnState : NSOffState];
